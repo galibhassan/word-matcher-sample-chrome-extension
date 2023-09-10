@@ -1,0 +1,15 @@
+{
+    "name": "find-in-page",
+    "description": "TBD",
+    "version": "0.0.1",
+    "manifest_version": 3,
+
+    "background": {
+        "service_worker": "./src/background.js"
+    },
+    "action": {
+        "default_popup": "./src/popup.html"
+    },
+    "permissions": ["activeTab", "tabs", "storage", "scripting" ],
+    "host_permissions": ["<all_urls>"]
+}
